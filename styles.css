@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 html{
     scroll-behavior: smooth;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgb(5, 77, 29);
     
 }
 
@@ -17,6 +19,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
+    border-radius: 20px;
     
     height: 100px;  
 }
@@ -39,6 +42,7 @@ header{
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 1%;
+    border-radius: 20px;
 }
 
 .aboutme-text{
@@ -64,6 +68,8 @@ header{
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    border-radius: 20px;
+    font-size: 20px;
 
 }
 
@@ -79,6 +85,7 @@ header{
 
 .portfolio .title{
     text-align: center;
+    border-radius: 20px;
 }
 
 .projekt{
@@ -89,12 +96,14 @@ header{
     margin-top: 30px;
     margin-left: 2%;
     margin-right: 2%;
+    border-radius: 20px;
 }
 
 .projekt-text-box{
 
 flex-basis: 90%;
 margin-left: 5%;
+font-size: 150%;
 }
 
 .project-images{
@@ -102,24 +111,38 @@ margin-left: 5%;
     margin-left: 5%;
 }
 
+.projekt-text-box h2{
+    font-size: 200%;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
 .projekt-text-box p{
-    font-weight: 700;
+    font-weight: 1000;
 }
 
 .projekt-text-box span{
-    font-weight: 300;
+    font-weight: 400;
 
 }
 
 .aboutme img{
     margin-left: 20%;
-    border-radius: 20%;
+    border-radius: 20px;
     max-width: 300px;
     max-height: 300px;
+
 }
 
 img{
-    max-height: 150px;
+    max-height: 300px;
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width:800px){
+    img{
+        max-height: 100px;
+    }
 }
 
 
@@ -130,18 +153,22 @@ ul{
 p img{
     max-width: 100px;
     max-height: 100px;
+
     
 }
+
 
 .skills-text p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 iframe{
-    max-width: 300px;
-    max-height: 150px;
+    max-width: 400px;
+    max-height: 250px;
+    border-radius: 20px;
 }
 
 .title{
@@ -154,6 +181,51 @@ iframe{
  
     justify-content: center;
 }
+
+a{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+a:link{
+    color: #DEF5E5;
+}
+
+a:visited{
+    color: #DEF5E5;
+}
+
+a:hover{
+    color: black;
+}
+
+header li{
+    list-style-type:none;
+}
+
+p img{
+    margin-left: 20px;
+}
+
+.kontakt-container {
+    background-color: #678a80;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 1%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.kontakt-container i{
+    transform: scale(2);
+    margin-left: 40px;
+
+}
+
+
 
 
 
