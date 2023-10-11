@@ -17,49 +17,55 @@ body {
 
 header {
     background-color: #8EC3B0;
-    justify-self: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
 
-    height: 100px;
+
 }
 
 .logo {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 5vh;
 }
 
 .nav-bar {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-line{
+    margin: 2px;
 }
 
 .aboutme {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #678a80;
-    height: 500px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 1%;
+
     border-radius: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .aboutme-text {
-    margin-left: 5%;
-
+    font-size: 2vh;
 
 }
 
-.aboutme-text h2 {
-    font-size: 40px;
+
+.aboutme img {
+
+    border-radius: 20px;
+
+    max-height: 30vh;
+
 }
 
-.aboutme-text p {
-    font-size: 24px;
-}
 
 .skills {
     display: flex;
@@ -72,7 +78,22 @@ header {
     margin-right: 20%;
     border-radius: 20px;
     font-size: 20px;
+    flex-wrap: wrap;
 
+}
+
+.skills-text p {
+    font-size: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-text h2 {
+    font-size: 3vh
+}
+
+.skills-text p img {
+    max-width: clamp(10%, 30%, 50%);
 }
 
 
@@ -90,6 +111,7 @@ header {
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 20px;
+
 }
 
 .projekt-text-box {
@@ -117,6 +139,7 @@ header {
     width: 100%;
     height: 100%;
 
+
 }
 
 .projekt-text-box h2 {
@@ -134,15 +157,16 @@ header {
 
 }
 
-.aboutme img {
-    margin-left: 20%;
-    border-radius: 20px;
-    max-width: 40vw;
-    max-height: 40vh;
 
+.artikel i {
+    margin-bottom: 30px;
+    transform: scale(.8);
 }
 
+
+
 img {
+
     max-width: 300px;
     border-radius: 20px;
     margin: 5px;
@@ -169,9 +193,10 @@ p img {
 }
 
 iframe {
-    max-width: 400px;
-    max-height: 250px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
+    margin: 5px;
 }
 
 .title {
@@ -187,7 +212,7 @@ iframe {
 
 a {
     font-size: 20px;
-    margin-right: 20px;
+
 
 
 }
@@ -213,75 +238,35 @@ p img {
 }
 
 .kontakt-container {
+    margin-top: 2%;
     background-color: #678a80;
-    height: 80px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    margin-top: 1%;
-    margin-left: 20px;
-    margin-right: 20px;
+    height: 50px;
+
 }
 
 .kontakt-container i {
-    transform: scale(2);
-    margin-left: 40px;
-    margin-right: 40px;
+
+    max-width: 100%;
+    margin: 1rem;
 
 }
 
-/*
-@media only screen and (max-width:800px){
-    img{
-        max-height: 200px;
-        max-width: 120px;
 
+@media only screen and (max-width:800px) {
+
+    .projekt-text-box {
+
+        width: 95%;
+        height: 98%;
+        align-items: start;
+        font-size: 100%;
+
+        margin-left: 5%;
+        margin-bottom: 2%;
     }
 
-    html{
-        font-size: 10px;
-    }
-
-    iframe{
-        max-width: 50px;
-        max-height: 25px;
-        border-radius: 20px;
-    }
-
-    .logo{
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    a{
-        font-size: 15px;
-        margin: 3px;
-    }
-    .logo{
-        max-width: 30px;
-    }
-
-    .aboutme-text h2{
-        font-size: 25px;
-    }
-
-    .aboutme-text p{
-        font-size: 16px;
-    }
-
-    p img{
-        max-width: 60px;
-    }
-
-    .kontakt-container{
-        transform: scale(.5);
-    }
-
-    @media (prefers-color-scheme: dark) {
-        
-      }
-
-    
 }
-*/
